@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Invaders</title>
+  </head>
+  <body>
+    <div style="position:absolute;top:50%;left:50%;margin-top:-60px;margin-left:-80px;width:160px;height:120px;">    
+      <canvas id="canvas" width="160" height="120"></canvas></br>
+      <span id="lblMessage"></span>
+    </div>
+    
+    <!-- engine -->
+    <script type="text/javascript" src="js/engine/linkedlist.js"></script>
+    <script type="text/javascript" src="js/engine/vector3.js"></script>
+    <script type="text/javascript" src="js/engine/graphics.js"></script>
+    <script type="text/javascript" src="js/engine/timer.js"></script>
+    <script type="text/javascript" src="js/engine/animation.js"></script>
+    <script type="text/javascript" src="js/engine/bitmap.js"></script>
+    <script type="text/javascript" src="js/engine/keyboard.js"></script>
+    <script type="text/javascript" src="js/engine/engine.js"></script>
+    <script type="text/javascript" src="js/engine/entity.js"></script>
+    <script type="text/javascript" src="js/engine/camera.js"></script>
+    <script type="text/javascript" src="js/engine/map.js"></script>
+    
+    <!-- game -->
+    <script type="text/javascript" src="js/game/tilemap.js"></script>
+    <script type="text/javascript" src="js/game/bullit.js"></script>
+    <script type="text/javascript" src="js/game/enemy.js"></script>
+    <script type="text/javascript" src="js/game/enemyufo.js"></script>
+    <script type="text/javascript" src="js/game/player.js"></script>
+    <script type="text/javascript" src="js/game/gamestategame.js"></script>
+    <script type="text/javascript" src="js/game/game.js"></script>
+    <script type="text/javascript" src="js/game/main.js"></script>
+    <script type="text/javascript" src="js/game/helper.js"></script>
+    
+    <script>    
+      setup();
+      window.requestAnimationFrame(loop);
+    </script>
+  </body>
+</html>
